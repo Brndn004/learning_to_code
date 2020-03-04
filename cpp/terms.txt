@@ -1,0 +1,43 @@
+Ch 1
+
+affordability: does this cost what most people are willing to pay?
+analysis: stage 1 of developing a program; what's the problem? etc.
+blackboard: an archaic whiteboard
+CAD/CAM: computer aided design / manufacturing
+communication: transfering info / ideas from one source to another
+correctness: a program is correct if it meets its specifications
+customer: aka end user
+design: state 2 of developing a program; how do we solve the problem? etc.
+feedback: using learnings from writing the code to improve the same code
+GUI: graphical user interface
+ideals: what we strive for as programmers to create Good(TM) code
+implementation: the act of writing code to solve a problem; also the code itself
+programmer: one who programs
+programming: stage 3 of developing a program; expressing a design in code
+software: a collection of programs running on some computer
+stereotype: exaggerated fact applied as a generalization
+testing: state 4 of developing a program; make sure it works under all circumstances by systematically trying it out
+user: one who interacts with a program
+
+Ch 2
+
+//: token signifying a comment in C++
+<<: output operator
+C++: a compiled, statically typed programming language
+comment: human-readable text in source code that is ignored by a compiler
+compiler: program that turns source code into object code
+compile-time error: an error that occurs while attempting to compile
+cout: pronounced "see-out"; character output stream
+executable: compiled and linked code that a computer can run
+function: a named sequence of instructions
+header: a file containing declarations of code we want to use
+IDE: integrated development environment
+#include: an include directive; tells the compiler to make available some other facilities
+library: a collection of code
+linker: a program that links object files into an executable
+main(): a function that every C++ program must have that tells it where to start executing
+object code: compiled source code
+output: something that goes out; to send something out
+program: code (and possibly associated data) that is complete enough to be executed by a computer
+source code: human-readable text that describes a program; aka program text
+statement: part of a C++ program that specifies an action and isn't an #include directive (or some other preprocessor directive)
