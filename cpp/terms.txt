@@ -41,3 +41,25 @@ output: something that goes out; to send something out
 program: code (and possibly associated data) that is complete enough to be executed by a computer
 source code: human-readable text that describes a program; aka program text
 statement: part of a C++ program that specifies an action and isn't an #include directive (or some other preprocessor directive)
+
+Ch 3
+
+assignment: giving a variable a new value
+cin: pronounced "see-in"; character input stream
+concatenation: appending one thing to another; for strings, concatenate with +
+conversion: changing between types
+declaration: a statement that gives a name to an object
+decrement: reduce by 1
+definition: a declaration that sets aside memory for an object
+increment: increase by 1
+initialization: giving a variable its initial value
+name: identifier for an object
+narrowing: converting from a large-memory value to a smaller one that might not be able to hold it
+object: a region of memory with a type that specifies what kind of information can be placed in it
+operation: something that can perform some action, such as a functino and an operator
+operator: constructs which behave generally like functions, but which differ syntactically or semantically from usual functions
+type: something that defines a set of possible values and a set of operations for an object
+type safety: a program is type safe when its objects are used only according to the rules for their type
+value: a set of bits in memory interpreted according to a type
+variable: a named object
+
