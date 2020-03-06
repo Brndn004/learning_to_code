@@ -65,34 +65,34 @@ variable: a named object
 
 Ch 4
 
-abstraction:
-begin():
-computation:
-conditional statement:
-declaration:
-definition:
-divide and conquer:
-else:
-end():
-expression:
-for-statement:
-range-for-statement:
-function:
-if-statement:
-increment:
-input:
-iteration:
-loop:
-lvalue:
-member function:
-output:
-push_back():
-repetition:
-rvalue:
-selection:
-size():
-sort():
-statement:
-switch-statement:
-vector:
-while-statement:
+abstraction: hiding details that we don't need to know behind a general interface
+begin(): a vector member function that returns an iterator pointing to the first element of the vector
+computation: producing outputs based on some inputs
+conditional statement: a statement that executes only when a condition is met (e.g. if)
+declaration: the specification of a name with its type
+definition: a declaration that allocates memory
+divide and conquer: breaking down a large problem into several little ones
+else: the second alternative to an if statement
+end(): a vector member function that returns an iterator pointing to the last element of the vector
+expression: something that computes a value from a set of operands
+for-statement: an abstraction to iterate over a sequence where the control variable is concentrated at the top
+range-for-statement: a for loop over all of the elements of a sequence, one element at a time
+function: a named sub-computation
+if-statement: a conditional that selects between two alternatives
+increment: increase by 1
+input: values used by a computation
+iteration: the act of repeatedly executing a piece of code
+loop: a piece of code executed repeatedly
+lvalue: left-hand operand
+member function: a function owned by a type that must be specified with dot notation (e.g. v.size())
+output: values produced by a computation
+push_back(): a vector member function that appends to the end
+repetition: repeating something; iteration
+rvalue: right-hand operand
+selection: one of possibly many alternative actions
+size(): a vector member function that tells how many elements are in the vector
+sort(): a variant of std::sort()
+statement: a line ending with a semi-colon
+switch-statement: a conditional that checks a constexpr against a number of cases
+vector: a data structure that holds its own size, as well as a pointer to it's list of elements
+while-statement: a conditional that iterates until its condition is met
