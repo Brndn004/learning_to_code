@@ -1,8 +1,13 @@
 #include "std_lib_facilities.h"
 
 int main() {  
-  int max_val{100};
-  
+  cout << "Enter the maximum integer (>=2) for which you want to search: ";
+  int max_val{0};
+  while (max_val < 2) {
+    cin >> max_val;
+    if (max_val < 2) cout << "  I need a maximum integer that is >= 2: ";
+  }
+
   vector<int> reduce_me;
   for (int ii = 2; ii <= max_val; ++ii) reduce_me.push_back(ii);
 
