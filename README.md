@@ -2,7 +2,7 @@
 
 ### To use my .vimrc without putting it into your home directory
 
-In ~/.bashrc, add:
+In `~/.bashrc`, add:
 ```bash
 export VIMINIT="source ~/path/to/this/repo/.vimrc"
 ```
