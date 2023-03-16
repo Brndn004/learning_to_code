@@ -1,0 +1,98 @@
+Ch 1
+
+affordability: does this cost what most people are willing to pay?
+analysis: stage 1 of developing a program; what's the problem? etc.
+blackboard: an archaic whiteboard
+CAD/CAM: computer aided design / manufacturing
+communication: transfering info / ideas from one source to another
+correctness: a program is correct if it meets its specifications
+customer: aka end user
+design: state 2 of developing a program; how do we solve the problem? etc.
+feedback: using learnings from writing the code to improve the same code
+GUI: graphical user interface
+ideals: what we strive for as programmers to create Good(TM) code
+implementation: the act of writing code to solve a problem; also the code itself
+programmer: one who programs
+programming: stage 3 of developing a program; expressing a design in code
+software: a collection of programs running on some computer
+stereotype: exaggerated fact applied as a generalization
+testing: state 4 of developing a program; make sure it works under all circumstances by systematically trying it out
+user: one who interacts with a program
+
+Ch 2
+
+//: token signifying a comment in C++
+<<: output operator
+C++: a compiled, statically typed programming language
+comment: human-readable text in source code that is ignored by a compiler
+compiler: program that turns source code into object code
+compile-time error: an error that occurs while attempting to compile
+cout: pronounced "see-out"; character output stream
+executable: compiled and linked code that a computer can run
+function: a named sequence of instructions
+header: a file containing declarations of code we want to use
+IDE: integrated development environment
+#include: an include directive; tells the compiler to make available some other facilities
+library: a collection of code
+linker: a program that links object files into an executable
+main(): a function that every C++ program must have that tells it where to start executing
+object code: compiled source code
+output: something that goes out; to send something out
+program: code (and possibly associated data) that is complete enough to be executed by a computer
+source code: human-readable text that describes a program; aka program text
+statement: part of a C++ program that specifies an action and isn't an #include directive (or some other preprocessor directive)
+
+Ch 3
+
+assignment: giving a variable a new value
+cin: pronounced "see-in"; character input stream
+concatenation: appending one thing to another; for strings, concatenate with +
+conversion: changing between types
+declaration: a statement that gives a name to an object
+decrement: reduce by 1
+definition: a declaration that sets aside memory for an object
+increment: increase by 1
+initialization: giving a variable its initial value
+name: identifier for an object
+narrowing: converting from a large-memory value to a smaller one that might not be able to hold it
+object: a region of memory with a type that specifies what kind of information can be placed in it
+operation: something that can perform some action, such as a functino and an operator
+operator: constructs which behave generally like functions, but which differ syntactically or semantically from usual functions
+type: something that defines a set of possible values and a set of operations for an object
+type safety: a program is type safe when its objects are used only according to the rules for their type
+value: a set of bits in memory interpreted according to a type
+variable: a named object
+
+Ch 4
+
+abstraction: hiding details that we don't need to know behind a general interface
+begin(): a vector member function that returns an iterator pointing to the first element of the vector
+computation: producing outputs based on some inputs
+conditional statement: a statement that executes only when a condition is met (e.g. if)
+declaration: the specification of a name with its type
+definition: a declaration that allocates memory
+divide and conquer: breaking down a large problem into several little ones
+else: the second alternative to an if statement
+end(): a vector member function that returns an iterator pointing to the last element of the vector
+expression: something that computes a value from a set of operands
+for-statement: an abstraction to iterate over a sequence where the control variable is concentrated at the top
+range-for-statement: a for loop over all of the elements of a sequence, one element at a time
+function: a named sub-computation
+if-statement: a conditional that selects between two alternatives
+increment: increase by 1
+input: values used by a computation
+iteration: the act of repeatedly executing a piece of code
+loop: a piece of code executed repeatedly
+lvalue: left-hand operand
+member function: a function owned by a type that must be specified with dot notation (e.g. v.size())
+output: values produced by a computation
+push_back(): a vector member function that appends to the end
+repetition: repeating something; iteration
+rvalue: right-hand operand
+selection: one of possibly many alternative actions
+size(): a vector member function that tells how many elements are in the vector
+sort(): a variant of std::sort()
+statement: a line ending with a semi-colon
+switch-statement: a conditional that checks a constexpr against a number of cases
+vector: a data structure that holds its own size, as well as a pointer to it's list of elements
+while-statement: a conditional that iterates until its condition is met
