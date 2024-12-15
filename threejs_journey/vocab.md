@@ -10,3 +10,5 @@
 * npm: Node Package Manager.
   * Used to install packages for Node.js, similar to pip for Python.
 * OpenGL: Open Graphics Library.
+* Z-fighting: two faces seem to fight for which one will be rendered above the
+  other.
