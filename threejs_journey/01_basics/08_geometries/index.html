@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Three.js Project</title>
+    <!--
+      It seems that this is found automatically. Keeping it here to be explicit,
+      but if you comment it out nothing changes, and changing the contents of
+      style.css will change the rendered site.
+    -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!--
+      Must come before defining the script, presumably because the script will
+      be using the canvas element.
+    -->
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

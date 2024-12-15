@@ -1,0 +1,19 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+.webgl
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Perhaps needed in some cases, but makes no difference on my computer. */
+  /* Keeping it anyway, though, for shareability. */
+  outline: none;
+}
+html,
+body
+{
+  overflow: hidden;
+}
