@@ -1,2 +1,8 @@
 *.o
 *.DS_Store
+
+# Downloaded node modules that end up in node_modules/ directories.
+node_modules/
+
+# Vim temporary files.
+*.swp
