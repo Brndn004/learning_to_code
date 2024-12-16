@@ -13,4 +13,8 @@ In this repo I will keep track of my progress and all of the code that I write.
   * [poliigon.com](https://www.poliigon.com/)
   * [3dtextures.me](https://3dtextures.me/)
   * [arroway-textures.ch](https://www.arroway-textures.ch/)
+* Material captures (matcaps):
+  * [matcaps](https://github.com/nidorx/matcaps), though licensing is on a
+    per-matcap basis at this link.
+  * [Matcap Tweaker](https://www.kchapelier.com/matcap-studio/)
 

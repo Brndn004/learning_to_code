@@ -67,6 +67,7 @@ export function createMeshConfig({
   meshName = 'Mesh',
   folder = null,
   subdivisions = 1,
+  side = THREE.FrontSide,
   positionConfig = createPositionConfig(),
 } = {}) {
   return {
@@ -123,7 +124,57 @@ export function debugMesh(
         .max(config.positionConfig.zMax)
         .step(config.positionConfig.step)
         .name('positionZ');
-  folder.addColor(mesh.material, 'color');
+  // Debug for MeshBasicMaterial.
+  if (mesh.material.type === 'MeshBasicMaterial') {
+    // MeshNormalMaterial doesn't have a color property, so this debug UI is
+    // pretty specific, it turns out. Condition that out of the UI.
+    folder.addColor(mesh.material, 'color');
+  }
+  // Debug for MeshNormalMaterial.
+  if (mesh.material.type === 'MeshNormalMaterial') {
+    folder.add(mesh.material, 'flatShading')
+          .onChange(() => {
+            mesh.material.needsUpdate = true;
+          });
+  }
+  // Debug for MeshPhongMaterial.
+  if (mesh.material.type === 'MeshPhongMaterial') {
+    folder.add(mesh.material, 'shininess').min(0).max(100);
+  }
+  // Debug for MeshStandardMaterial.
+  if (mesh.material.type === 'MeshStandardMaterial') {
+    folder.add(mesh.material, 'metalness').min(0).max(1).step(0.01);
+    folder.add(mesh.material, 'roughness').min(0).max(1).step(0.01);
+  }
+  // Debug for MeshPhysicalMaterial.
+  if (mesh.material.type === 'MeshPhysicalMaterial') {
+    folder.add(mesh.material, 'clearcoat').min(0).max(1).step(0.01);
+    folder.add(mesh.material, 'clearcoatRoughness').min(0).max(1).step(0.01);
+
+    folder.add(mesh.material, 'sheen').min(0).max(1).step(0.01);
+    folder.add(mesh.material, 'sheenRoughness').min(0).max(1).step(0.01);
+    folder.addColor(mesh.material, 'sheenColor');
+
+    folder.add(mesh.material, 'iridescence').min(0).max(1).step(0.01);
+    folder.add(mesh.material, 'iridescenceIOR').min(1).max(2.33).step(0.01);
+    folder.add(mesh.material.iridescenceThicknessRange, '0').min(1).max(1000).step(1);
+    folder.add(mesh.material.iridescenceThicknessRange, '1').min(1).max(1000).step(1);
+
+    folder.add(mesh.material, 'transmission').min(0).max(1).step(0.01);
+    folder.add(mesh.material, 'ior').min(1).max(10).step(0.01);
+    folder.add(mesh.material, 'thickness').min(0).max(1).step(0.01);
+  }
+  folder.add(mesh.material, 'side', {
+    FrontSide: THREE.FrontSide,
+    BackSide: THREE.BackSide,
+    DoubleSide: THREE.DoubleSide,
+  });
+  folder.add(mesh.material, 'transparent');
+  folder.add(mesh.material, 'opacity').min(0).max(1).step(0.01);
+  folder.add(mesh.material, 'alphaMap', {
+    None: null,
+    alphaMap: mesh.material.alphaMap,
+  });
   return folder;
 }
 

@@ -2,6 +2,9 @@
   * E.g. Vite, Webpack, Parcel, etc.
 * Bundle: a single file that contains all your code.
   * Bundles are created by build tools.
+* Environment map: an image of what's surrounding the scene.
+  * Use it to add reflection, refraction, and lighting in addition to any actual
+    lights that you define.
 * GLSL: a C-like language for writing shaders.
   * Stands for "(Open)GL Shading Language".
 * GSAP: GreenSock Animation Platform.
@@ -26,6 +29,8 @@
 * Texture, height: a grayscale image that moves the vertices to create some
   relief.
   * You must add subdivisions to the geometry to see the effect.
+* Texture, matcap: material capture, a technique that uses pre-rendered images
+  to simulate lighting.
 * Texture, metalness: specify which part is metalic to help create reflections.
 * Texture, normal: a texture that determines the direction of the normals.
   * It doesn't move vertices, but it will trick the light into thinking the face
